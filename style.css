@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.btn{
+    text-decoration: none;
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #e02c6d;
+}
+.btn:hover{
+    background-color: #3DBAFD;
+    transition: 0.5s;
+}
+
+/* -----slider------  */
+
+.top-slider{
+    background: blue;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.slider{
+    width: 1150px;
+    margin: auto;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .col-1{
+      flex-basis: 50%;
+  }
+  .col-1 h1{
+      color: #fff;
+      font-size: 64px;
+  }
+  .col-1 img{
+      width: 100%;
+  }
+
+
+/* Football-Section */
+
+.football{
+    margin: 50px 0;
+}
+.football-star{
+    width: 1035px;
+    margin: auto;
+    background-color: #F1F1F1;
+    padding: 10px 0 10px 10px;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 27px;
+}
+.players{
+    width: 300px;
+    height: 474px;
+    background-color: #fff;
+    padding: 10px;
+}
+ 
+.thumbnail img{
+      width: 100%;
+}
+.player-info h3{
+    font-size: 28px;
+}
+.player-info p{
+    font-size: 16px;
+}
+
+/* Gallery */
+
+.gallery{
+    padding: 0 3px;
+    margin-bottom: 50px;
+}
+.gallery-tittle{
+    padding-left: 20px;
+    font-size: 50px;
+}
+.gallery-image{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.gallery-photo img{
+    width: 265px;
+    height: 200px;
+}
+
+/* Highlights */
+
+.col-1 .highlights-tittle{
+    font-size: 45px;
+    padding: 0 10px;
+}
+.col-1 .highlights-text{
+    color: #fff;
+    padding: 0 10px 0 20px;
+}
+.high-btn{
+    margin-left: 10px;
+    
+}
+
+/* Footer-Area */
+.footer{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-image img{
+    width: 262px;
+    height: 110px;
+}
+.fab{
+    margin: 0 5px;
+    font-size: 22px;
+}
+
+
+
+
+/* Responsive */
+
+
+/* Responsive for iPhone X/XS/iOS 12 */
+
+@media only screen and (max-width: 688px){
+    
+/* Slider Section */
+
+    .row{
+        flex-direction: column;
+    }
+    .slider{
+        width: 100%;
+    }
+    .col-1 h1{
+        font-size: 40px;
+    }
+    .col-1 img{
+        padding-top: 50px;
+    }
+
+    /* Football Section  */
+
+    .top-players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Gallery  */
+    .gallery{
+        text-align: center;
+    }
+    .gallery-tittle{
+        padding-left: 0;
+    }
+    .gallery-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Highlight  */
+
+    .highlights-tittle{
+        font-size: 40px;
+    }
+
+}
+
+/* For iPad  */
+
+@media only screen and (min-width: 689px) and (max-width: 992px){
+
+    /* Slider Section */
+    .slider{
+        width: 100%;
+    }
+    .col-1 h1{
+        font-size: 40px;
+    }
+    .col-1 h1,.col-1 a{
+        margin-left: 10px;
+    }
+    /* Football Section  */
+
+    .top-players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .football-star{
+        width: 100%;
+    }
+    /* Gallery Section  */
+
+    .gallery-image{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery-photo img {
+        width: 250px;
+        height: 200px;
+    }
+    /* Highlight Section  */
+    .col-1 .highlights-tittle {
+        font-size: 30px;
+    }
+    .col-1.highlight-image img{
+        width: 95%;
+    }
+
+}
